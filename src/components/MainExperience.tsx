@@ -154,8 +154,21 @@ const MainExperience = () => {
           </motion.div>
         )}
 
-        {/* Scene 6: Compliment Generator */}
+        {/* Scene 6: Heart Catch Game */}
         {scene === 5 && (
+          <motion.div
+            key="heart-game"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <HeartCatchGame onContinue={nextScene} />
+          </motion.div>
+        )}
+
+        {/* Scene 7: Compliment Generator */}
+        {scene === 6 && (
           <motion.div
             key="compliments"
             initial={{ opacity: 0 }}
@@ -167,8 +180,8 @@ const MainExperience = () => {
           </motion.div>
         )}
 
-        {/* Scene 7: Hidden Secret */}
-        {scene === 6 && (
+        {/* Scene 8: Hidden Secret */}
+        {scene === 7 && (
           <motion.div
             key="secret"
             initial={{ opacity: 0 }}
@@ -181,7 +194,7 @@ const MainExperience = () => {
         )}
 
         {/* Final Scene */}
-        {scene === 7 && (
+        {scene === 8 && (
           <motion.div
             key="final"
             initial={{ opacity: 0 }}
