@@ -5,6 +5,7 @@ import ShayariWall from "./ShayariWall";
 import LoveLetter from "./LoveLetter";
 import ComplimentGenerator from "./ComplimentGenerator";
 import PlayfulChallenge from "./PlayfulChallenge";
+import HeartCatchGame from "./HeartCatchGame";
 import HiddenSecret from "./HiddenSecret";
 import FinalScene from "./FinalScene";
 
